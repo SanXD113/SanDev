@@ -65,7 +65,6 @@ echo -e "\033[32mWHATSAPP SanXDev : 089502289957\033[0m"
 echo -e "\033[31mTELEGRAM SanXDev : SanXDv\033[0m"
 echo ""
 
-# Tambahkan bagian lain dari skrip Anda di sini jika diperlukan
 #Check user token
 check_token() {
   echo -e "                                                       "
