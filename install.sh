@@ -145,7 +145,7 @@ case "$OPTION" in
         GITHUB_TOKEN="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"
 
         # Clone repositori menggunakan token
-        REPO_URL="https://github.com/SanXD113/folderr.git"
+        REPO_URL="https://github.com/SanXD113/SanDev.git"
         TEMP_DIR="folderr"
 
         # Mengkloning repositori
@@ -184,7 +184,7 @@ case "$OPTION" in
         GITHUB_TOKEN="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"
 
         # Clone repositori menggunakan token
-        REPO_URL="https://github.com/SanXD113/folderr.git"
+        REPO_URL="https://github.com/SanXD113/SanDev.git"
         TEMP_DIR="folderr"
 
         # Mengkloning repositori
@@ -230,7 +230,7 @@ fi
     GITHUB_TOKEN="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"
 
     # Clone repositori menggunakan token
-    REPO_URL="https://github.com/SanXD113/folderr.git"
+    REPO_URL="https://github.com/SanXD113/SanDev.git"
     TEMP_DIR="folderr"
 
     # Mengkloning repositori
@@ -255,7 +255,7 @@ fi
     GITHUB_TOKEN="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"
 
     # Clone repositori menggunakan token
-    REPO_URL="https://github.com/SanXD113/folderr.git"
+    REPO_URL="https://github.com/SanXD113/SanDev.git"
     TEMP_DIR="folderr"
 
     # Mengkloning repositori
@@ -311,7 +311,7 @@ cd /var/www/
 GITHUB_TOKEN="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"
 
 # Clone repositori menggunakan token
-REPO_URL="https://github.com/SanXD113/folderr.git"
+REPO_URL="https://github.com/SanXD113/SanDev.git"
 TEMP_DIR="folderr"
 
 # Mengkloning repositori
@@ -494,7 +494,7 @@ fi
         GITHUB_TOKEN="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"
 
         # Clone repositori menggunakan token
-        REPO_URL="https://github.com/SanXD113/folderr.git"
+        REPO_URL="https://github.com/SanXD113/SanDev.git"
         TEMP_DIR="folderr"
 
         # Mengkloning repositori
@@ -557,7 +557,7 @@ fi
 GITHUB_TOKEN="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"
 
 # Clone repositori menggunakan token
-REPO_URL="https://github.com/SanXD113/folderr.git"
+REPO_URL="https://github.com/SanXD113/SanDev.git"
 TEMP_DIR="folderr"
 
 # Mengkloning repositori
