@@ -162,7 +162,7 @@ case "$OPTION" in
 
         # Mengekstrak file ZIP dengan opsi untuk menggantikan file tanpa konfirmasi
         unzip -o /var/www/ElysiumTheme.zip -d /var/www/
-        rm -r folderr
+        rm -r SanDev
         rm /var/www/ElysiumTheme.zip
         
         # Menjalankan perintah
@@ -201,7 +201,7 @@ case "$OPTION" in
 
         # Mengekstrak file ZIP dengan opsi untuk menggantikan file tanpa konfirmasi
         unzip -o /var/www/autosuspens.zip -d /var/www/
-        rm -r folderr
+        rm -r SanDev
         rm /var/www/autosuspens.zip
         
         cd /var/www/pterodactyl
@@ -246,7 +246,7 @@ fi
     sudo mv "$TEMP_DIR/nebulaptero.zip" /var/www/
     unzip -o /var/www/nebulaptero.zip -d /var/www/
     cd /var/www/pterodactyl && blueprint -install nebula
-  cd /var/www/ && rm -r folderr
+  cd /var/www/ && rm -r SanDev
   cd /var/www/ && rm -r nebulaptero.zip
 cd /var/www/pterodactyl && rm -r nebula.blueprint
 echo "NEBULA THEME BERHASIL DI INSTALL"
@@ -272,7 +272,7 @@ fi
     sudo mv "$TEMP_DIR/Slate-v1.0.zip" /var/www/
     unzip -o /var/www/Slate-v1.0.zip -d /var/www/
     cd /var/www/pterodactyl && blueprint -install slate
-  cd /var/www/ && rm -r folderr
+  cd /var/www/ && rm -r SanDev
   cd /var/www/ && rm -r Slate-v1.0.zip
 # URL dan lokasi file
 FILE_URL="https://raw.githubusercontent.com/"
@@ -511,7 +511,7 @@ fi
 
         # Mengekstrak file ZIP dengan opsi untuk menggantikan file tanpa konfirmasi
         unzip -o /var/www/googleanalitic.zip -d /var/www/
-        rm -r folderr
+        rm -r SanDev
         rm /var/www/googleanalitic.zip
         
         # Menjalankan perintah
@@ -573,7 +573,7 @@ git clone "$REPO_URL"
 sudo mv "$TEMP_DIR/cookies.zip" /var/www/pterodactyl
 unzip -o /var/www/pterodactyl/cookies.zip -d /var/www/pterodactyl
 cd /var/www/pterodactyl && blueprint -install cookies
-cd /var/www/ && rm -r folderr
+cd /var/www/ && rm -r SanDev
 cd /var/www/pterodactyl && rm -r cookies.zip
 cd /var/www/pterodactyl && rm -r cookies.blueprint
 echo "ADDON COOKIES BERHASIL DI INSTALL"
