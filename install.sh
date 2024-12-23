@@ -66,19 +66,27 @@ echo -e "\033[31mTELEGRAM SanXDev : SanXDv\033[0m"
 echo ""
 
 # Tambahkan bagian lain dari skrip Anda di sini jika diperlukan
-# Fungsi untuk menampilkan animasi loading
-loading_animation() {
-    local spinstr='|/-\'
-    local loading_text="LOADING..."
-    local i=0
-    while [ $i -lt ${#loading_text} ]; do
-        local temp=${spinstr#?}
-        printf " [%c] %s" "$spinstr" "${loading_text:0:i+1}"
-        local spinstr=$temp${spinstr%"$temp"}
-        printf "\r"
-        i=$((i + 1))
-    done
-    printf "\r\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+#Check user token
+check_token() {
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]               LICENSY SanXDev                   [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
+  read -r USER_TOKEN
+
+  if [ "$USER_TOKEN" = "SanDev" ]; then
+    echo -e "${GREEN}AKSES BERHASIL${NC}}"
+  else
+    echo -e "${GREEN}Buy dulu Gih Ke SanXDv / SanDev${NC}"
+    echo -e "${YELLOW}TELEGRAM : @SanXDv${NC}"
+    echo -e "${YELLOW}WHATSAPP : 6289502289957${NC}"
+    echo -e "${YELLOW}HARGA TOKEN : 25K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
+    echo -e "${YELLOW}©SanDev${NC}"
+    exit 1
+  fi
+  clear
 }
 
 # Fungsi untuk menampilkan teks animasi
@@ -146,7 +154,7 @@ case "$OPTION" in
 
         # Clone repositori menggunakan token
         REPO_URL="https://github.com/SanXD113/SanDev.git"
-        TEMP_DIR="folderr"
+        TEMP_DIR="SanDev"
 
         # Mengkloning repositori
         git clone "$REPO_URL"
@@ -185,7 +193,7 @@ case "$OPTION" in
 
         # Clone repositori menggunakan token
         REPO_URL="https://github.com/SanXD113/SanDev.git"
-        TEMP_DIR="folderr"
+        TEMP_DIR="SanDev"
 
         # Mengkloning repositori
         git clone "$REPO_URL"
@@ -231,7 +239,7 @@ fi
 
     # Clone repositori menggunakan token
     REPO_URL="https://github.com/SanXD113/SanDev.git"
-    TEMP_DIR="folderr"
+    TEMP_DIR="SanDev"
 
     # Mengkloning repositori
     git clone "$REPO_URL"
@@ -256,7 +264,7 @@ fi
 
     # Clone repositori menggunakan token
     REPO_URL="https://github.com/SanXD113/SanDev.git"
-    TEMP_DIR="folderr"
+    TEMP_DIR="SanDev"
 
     # Mengkloning repositori
     git clone "$REPO_URL"
@@ -312,7 +320,7 @@ GITHUB_TOKEN="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"
 
 # Clone repositori menggunakan token
 REPO_URL="https://github.com/SanXD113/SanDev.git"
-TEMP_DIR="folderr"
+TEMP_DIR="SanDev"
 
 # Mengkloning repositori
 git clone "$REPO_URL" "$TEMP_DIR"
@@ -495,7 +503,7 @@ fi
 
         # Clone repositori menggunakan token
         REPO_URL="https://github.com/SanXD113/SanDev.git"
-        TEMP_DIR="folderr"
+        TEMP_DIR="SanDev"
 
         # Mengkloning repositori
         git clone "$REPO_URL"
@@ -558,7 +566,7 @@ GITHUB_TOKEN="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"
 
 # Clone repositori menggunakan token
 REPO_URL="https://github.com/SanXD113/SanDev.git"
-TEMP_DIR="folderr"
+TEMP_DIR="SanDev"
 
 # Mengkloning repositori
 git clone "$REPO_URL"
