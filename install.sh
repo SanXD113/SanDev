@@ -47,46 +47,24 @@ load_config
 
 clear
 echo -e "\033[31m"
-echo "╭━━━┳╮╱╱╭╮╱╱╭━╮╭━┳━━━╮"
-echo "┃╭━╮┃┃╱╱┃┃╱╱╰╮╰╯╭┻╮╭╮┃"
-echo "┃┃╱┃┃┃╱╱┃┃╱╱╱╰╮╭╯╱┃┃┃┃"
-echo "┃╰━╯┃┃╱╭┫┃╱╭╮╭╯╰╮╱┃┃┃┃"
-echo "┃╭━╮┃╰━╯┃╰━╯┣╯╭╮╰┳╯╰╯┃"
-echo "╰╯╱╰┻━━━┻━━━┻━╯╰━┻━━━╯"
-echo "╭━━━┳━━━┳╮╱╱╭╮"
-echo "╰╮╭╮┃╭━━┫╰╮╭╯┃"
-echo "╱┃┃┃┃╰━━╋╮┃┃╭╯"
-echo "╱┃┃┃┃╭━━╯┃╰╯┃╱"
-echo "╭╯╰╯┃╰━━╮╰╮╭╯╱"
-echo "╰━━━┻━━━╯╱╰╯╱╱"
+echo "  ____             __  __"
+echo " / ___|  __ _ _ __ \ \/ /"
+echo " \___ \ / _` | '_ \ \  / "
+echo "  ___) | (_| | | | |/  \ "
+echo " |____/ \__,_|_| |_/_/\_\"
+echo "  ____             "
+echo " |  _ \  _____   __"
+echo " | | | |/ _ \ \ / /"
+echo " | |_| |  __/\ V / "
+echo " |____/ \___| \_/  "
 echo -e "\033[0m"
 echo -e "${RED}𝗢𝗪𝗡𝗘𝗥${RESET}${BLUE}𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥${RESET}"
 echo -e "\033[32mWHATSAPP SanXDev : 089502289957\033[0m"
 echo -e "\033[31mTELEGRAM SanXDev : SanXDv\033[0m"
 echo ""
 
-#Check user token
-check_token() {
-  echo -e "                                                       "
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               LICENSY SanXDev                   [+]${NC}"
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "                                                       "
-  echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
-  read -r USER_TOKEN
-
-  if [ "$USER_TOKEN" = "SanDev" ]; then
-    echo -e "${GREEN}AKSES BERHASIL${NC}}"
-  else
-    echo -e "${GREEN}Buy dulu Gih Ke SanXDv / SanDev${NC}"
-    echo -e "${YELLOW}TELEGRAM : @SanXDv${NC}"
-    echo -e "${YELLOW}WHATSAPP : 6289502289957${NC}"
-    echo -e "${YELLOW}HARGA TOKEN : 25K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
-    echo -e "${YELLOW}©SanDev${NC}"
-    exit 1
-  fi
-  clear
-}
+# Tambahkan bagian lain dari skrip Anda di sini jika diperlukan
+# Fungsi untuk menampilkan animasi loading
 
 # Fungsi untuk menampilkan teks animasi
 animate_text() {
@@ -103,13 +81,12 @@ animate_text "OPSI ADA DIBAWAH INI"
 # Fungsi untuk menampilkan animasi loading
 loading_animation() {
     local spinstr='|/-\'
-    local loading_text="LOADING"
+    local loading_text="LOADING..."
     local i=0
     while [ $i -lt ${#loading_text} ]; do
         local temp=${spinstr#?}
         printf " [%c] %s" "$spinstr" "${loading_text:0:i+1}"
         local spinstr=$temp${spinstr%"$temp"}
-        sleep $delay
         printf "\r"
         i=$((i + 1))
     done
@@ -152,8 +129,8 @@ case "$OPTION" in
         GITHUB_TOKEN="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"
 
         # Clone repositori menggunakan token
-        REPO_URL="https://github.com/SanXD113/SanDev.git"
-        TEMP_DIR="SanDev"
+        REPO_URL="https://github.com/SanXD113/folderr.git"
+        TEMP_DIR="folderr"
 
         # Mengkloning repositori
         git clone "$REPO_URL"
@@ -162,7 +139,7 @@ case "$OPTION" in
 
         # Mengekstrak file ZIP dengan opsi untuk menggantikan file tanpa konfirmasi
         unzip -o /var/www/ElysiumTheme.zip -d /var/www/
-        rm -r SanDev
+        rm -r folderr
         rm /var/www/ElysiumTheme.zip
         
         # Menjalankan perintah
@@ -191,8 +168,8 @@ case "$OPTION" in
         GITHUB_TOKEN="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"
 
         # Clone repositori menggunakan token
-        REPO_URL="https://github.com/SanXD113/SanDev.git"
-        TEMP_DIR="SanDev"
+        REPO_URL="https://github.com/SanXD113/folderr.git"
+        TEMP_DIR="folderr"
 
         # Mengkloning repositori
         git clone "$REPO_URL"
@@ -201,7 +178,7 @@ case "$OPTION" in
 
         # Mengekstrak file ZIP dengan opsi untuk menggantikan file tanpa konfirmasi
         unzip -o /var/www/autosuspens.zip -d /var/www/
-        rm -r SanDev
+        rm -r folderr
         rm /var/www/autosuspens.zip
         
         cd /var/www/pterodactyl
@@ -237,8 +214,8 @@ fi
     GITHUB_TOKEN="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"
 
     # Clone repositori menggunakan token
-    REPO_URL="https://github.com/SanXD113/SanDev.git"
-    TEMP_DIR="SanDev"
+    REPO_URL="https://github.com/SanXD113/folderr.git"
+    TEMP_DIR="folderr"
 
     # Mengkloning repositori
     git clone "$REPO_URL"
@@ -246,7 +223,7 @@ fi
     sudo mv "$TEMP_DIR/nebulaptero.zip" /var/www/
     unzip -o /var/www/nebulaptero.zip -d /var/www/
     cd /var/www/pterodactyl && blueprint -install nebula
-  cd /var/www/ && rm -r SanDev
+  cd /var/www/ && rm -r folderr
   cd /var/www/ && rm -r nebulaptero.zip
 cd /var/www/pterodactyl && rm -r nebula.blueprint
 echo "NEBULA THEME BERHASIL DI INSTALL"
@@ -262,8 +239,8 @@ fi
     GITHUB_TOKEN="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"
 
     # Clone repositori menggunakan token
-    REPO_URL="https://github.com/SanXD113/SanDev.git"
-    TEMP_DIR="SanDev"
+    REPO_URL="https://github.com/SanXD113/folderr.git"
+    TEMP_DIR="folderr"
 
     # Mengkloning repositori
     git clone "$REPO_URL"
@@ -272,7 +249,7 @@ fi
     sudo mv "$TEMP_DIR/Slate-v1.0.zip" /var/www/
     unzip -o /var/www/Slate-v1.0.zip -d /var/www/
     cd /var/www/pterodactyl && blueprint -install slate
-  cd /var/www/ && rm -r SanDev
+  cd /var/www/ && rm -r folderr
   cd /var/www/ && rm -r Slate-v1.0.zip
 # URL dan lokasi file
 FILE_URL="https://raw.githubusercontent.com/"
@@ -318,8 +295,8 @@ cd /var/www/
 GITHUB_TOKEN="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"
 
 # Clone repositori menggunakan token
-REPO_URL="https://github.com/SanXD113/SanDev.git"
-TEMP_DIR="SanDev"
+REPO_URL="https://github.com/SanXD113/folderr.git"
+TEMP_DIR="folderr"
 
 # Mengkloning repositori
 git clone "$REPO_URL" "$TEMP_DIR"
@@ -501,8 +478,8 @@ fi
         GITHUB_TOKEN="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"
 
         # Clone repositori menggunakan token
-        REPO_URL="https://github.com/SanXD113/SanDev.git"
-        TEMP_DIR="SanDev"
+        REPO_URL="https://github.com/SanXD113/folderr.git"
+        TEMP_DIR="folderr"
 
         # Mengkloning repositori
         git clone "$REPO_URL"
@@ -511,7 +488,7 @@ fi
 
         # Mengekstrak file ZIP dengan opsi untuk menggantikan file tanpa konfirmasi
         unzip -o /var/www/googleanalitic.zip -d /var/www/
-        rm -r SanDev
+        rm -r folderr
         rm /var/www/googleanalitic.zip
         
         # Menjalankan perintah
@@ -564,8 +541,8 @@ fi
 GITHUB_TOKEN="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"
 
 # Clone repositori menggunakan token
-REPO_URL="https://github.com/SanXD113/SanDev.git"
-TEMP_DIR="SanDev"
+REPO_URL="https://github.com/SanXD113/folderr.git"
+TEMP_DIR="folderr"
 
 # Mengkloning repositori
 git clone "$REPO_URL"
@@ -573,7 +550,7 @@ git clone "$REPO_URL"
 sudo mv "$TEMP_DIR/cookies.zip" /var/www/pterodactyl
 unzip -o /var/www/pterodactyl/cookies.zip -d /var/www/pterodactyl
 cd /var/www/pterodactyl && blueprint -install cookies
-cd /var/www/ && rm -r SanDev
+cd /var/www/ && rm -r folderr
 cd /var/www/pterodactyl && rm -r cookies.zip
 cd /var/www/pterodactyl && rm -r cookies.blueprint
 echo "ADDON COOKIES BERHASIL DI INSTALL"
